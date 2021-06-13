@@ -12,5 +12,5 @@ while i <= limit - 1:
     n2 = n3
     i += 1
 
-number = int(input("What`s number should be display?"))
-print(numbers[number - 1])
+
+print(numbers)
