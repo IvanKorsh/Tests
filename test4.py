@@ -1,10 +1,17 @@
 import pandas as pd
-import numpy as np
 
 data = pd.read_csv("data_housing.csv")
 
-clean = data["rent"].str.extract(r'^(\d{3})', expand=False)
-to_num = data["rent"] = pd.to_numeric(clean)
+for num in data:
+    clean_data = data["rent"].str.extract(r'^(\d{0,10})', expand=False)
+    data["rent"] = pd.to_numeric(clean_data)
 
 
-print(lol)
+# It needs more knowledge about processing DataFrames.
+# In a theory it can optimize with loops and no duplicate code
+
+
+
+
+
+

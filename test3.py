@@ -14,4 +14,4 @@ def coin_flip(n):
 
     print(rez)
 
-def probability():
+# Doesn`t work
